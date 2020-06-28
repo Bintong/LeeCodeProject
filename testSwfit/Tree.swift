@@ -83,7 +83,7 @@ class TreeMethod : NSObject {
         index = 0
         return inOrder(items)
     }
-    
+     
     func inOrder(_ items:[String]) -> TreeNode? {
         if items[index] == "null" {
             index += 1

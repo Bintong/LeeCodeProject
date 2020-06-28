@@ -181,6 +181,7 @@ possibleInteger = .some(100)
 
  
 class Solotion {
+//    102. 二叉树的层序遍历
     func levelOrder(_ root: TreeNode?) -> [
         [Int]] {
             
@@ -219,6 +220,38 @@ class Solotion {
             }
             return res
     }
+//    剑指 Offer 32 - I. 从上到下打印二叉树
+    func levelOrder1(_ root: TreeNode?) -> [Int] {
+        guard root != nil else {
+            return []
+        }
+        var res = [Int]()
+        var nodes = [TreeNode]()
+        nodes.append(root ?? TreeNode(0))
+         
+        while nodes.count > 0 {
+            
+
+            var arr = [TreeNode]()
+            for i  in 0..<nodes.count {
+             
+                    let node = nodes[i]
+                    res.append(node.val)
+                  
+                if node.left != nil {
+                    arr.append(node.left!)
+                }
+                if node.right != nil {
+                    arr.append(node.right!)
+                }
+                    
+
+            }
+            nodes = arr //换层
+            
+        }
+        return res
+    }
 }
 
 let c = Solotion()
@@ -237,6 +270,9 @@ node3.right = node5
 
 let arr_tree = c.levelOrder(node1)
 print(arr_tree)
+let arr_tree2 = c.levelOrder1(node1)
+print(arr_tree)
+print(arr_tree2)
 
 let test = Test()
 
