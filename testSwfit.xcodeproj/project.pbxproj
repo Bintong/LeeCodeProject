@@ -12,6 +12,8 @@
 		A67E001E24A6EB010033DD5C /* StringMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67E001D24A6EB010033DD5C /* StringMethod.swift */; };
 		A67E002024A6F1B00033DD5C /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67E001F24A6F1B00033DD5C /* Tree.swift */; };
 		A67E002224A85A0E0033DD5C /* BFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67E002124A85A0E0033DD5C /* BFS.swift */; };
+		A67E002424A866E90033DD5C /* DFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67E002324A866E90033DD5C /* DFS.swift */; };
+		A67E002624A8765D0033DD5C /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67E002524A8765D0033DD5C /* Array.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +35,8 @@
 		A67E001D24A6EB010033DD5C /* StringMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMethod.swift; sourceTree = "<group>"; };
 		A67E001F24A6F1B00033DD5C /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		A67E002124A85A0E0033DD5C /* BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFS.swift; sourceTree = "<group>"; };
+		A67E002324A866E90033DD5C /* DFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFS.swift; sourceTree = "<group>"; };
+		A67E002524A8765D0033DD5C /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 				A67E001D24A6EB010033DD5C /* StringMethod.swift */,
 				A67E001F24A6F1B00033DD5C /* Tree.swift */,
 				A67E002124A85A0E0033DD5C /* BFS.swift */,
+				A67E002324A866E90033DD5C /* DFS.swift */,
+				A67E002524A8765D0033DD5C /* Array.swift */,
 			);
 			path = testSwfit;
 			sourceTree = "<group>";
@@ -134,7 +140,9 @@
 			files = (
 				A67E001524A5ED780033DD5C /* main.swift in Sources */,
 				A67E002224A85A0E0033DD5C /* BFS.swift in Sources */,
+				A67E002624A8765D0033DD5C /* Array.swift in Sources */,
 				A67E002024A6F1B00033DD5C /* Tree.swift in Sources */,
+				A67E002424A866E90033DD5C /* DFS.swift in Sources */,
 				A67E001E24A6EB010033DD5C /* StringMethod.swift in Sources */,
 				A67E001C24A6EA250033DD5C /* test1.swift in Sources */,
 			);

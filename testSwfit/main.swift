@@ -304,3 +304,7 @@ let str_tree = "1,2,3,4,5"
 let inorderTree = treeE.serialize(node1)
 print(inorderTree)
 
+//array
+let arrtb = TBArray()
+let length123 = arrtb.minSubArrayLen(7, [2,3,1,2,4,3])
+print(length123)
