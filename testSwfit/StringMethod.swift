@@ -23,7 +23,7 @@ class StringMethod : NSObject {
         if new1 != new2 {
             return false
         } else {
-            return true;
+            return true
         }
     }
 }

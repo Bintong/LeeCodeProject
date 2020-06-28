@@ -42,7 +42,7 @@ class TreeMethod : NSObject {
         return maxTreeDepth + 1
     }
     
-//    226
+//    226  翻转二叉树
     func inverTree(_ root: TreeNode?) -> TreeNode? {
         guard root != nil else {
             return  nil
@@ -82,7 +82,6 @@ class TreeMethod : NSObject {
         let  items = data.components(separatedBy: ",")
         index = 0
         return inOrder(items)
-        
     }
     
     func inOrder(_ items:[String]) -> TreeNode? {
