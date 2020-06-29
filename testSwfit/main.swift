@@ -228,27 +228,21 @@ class Solotion {
         var res = [Int]()
         var nodes = [TreeNode]()
         nodes.append(root ?? TreeNode(0))
-         
+        
         while nodes.count > 0 {
-            
-
             var arr = [TreeNode]()
             for i  in 0..<nodes.count {
-             
-                    let node = nodes[i]
-                    res.append(node.val)
-                  
+                let node = nodes[i]
+                res.append(node.val)
+                
                 if node.left != nil {
                     arr.append(node.left!)
                 }
                 if node.right != nil {
                     arr.append(node.right!)
                 }
-                    
-
             }
             nodes = arr //换层
-            
         }
         return res
     }
@@ -308,3 +302,40 @@ print(inorderTree)
 let arrtb = TBArray()
 let length123 = arrtb.minSubArrayLen(7, [2,3,1,2,4,3])
 print(length123)
+
+
+// list
+let listNode1 = ListNode(1)
+let listNode2 = ListNode(2)
+let listNode3 = ListNode(3)
+let listNode4 = ListNode(4)
+let listNode5 = ListNode(5)
+let listNode6 = ListNode(6)
+
+listNode1.next = listNode2
+listNode2.next = listNode3
+listNode3.next = listNode4
+listNode4.next = listNode5
+listNode5.next = listNode6
+let list = List()
+let resNode = list.removeNthFromEnd(listNode1, 2)
+ 
+
+
+// list
+let list1Node1 = ListNode(1)
+let list1Node2 = ListNode(2)
+let list1Node3 = ListNode(3)
+let list1Node4 = ListNode(4)
+let list1Node5 = ListNode(5)
+let list1Node6 = ListNode(6)
+
+list1Node1.next = list1Node2
+list1Node2.next = list1Node3
+list1Node3.next = list1Node4
+list1Node4.next = list1Node5
+list1Node5.next = list1Node3
+
+let deNode = list.detectCycle(list1Node1)
+print(deNode)
+
