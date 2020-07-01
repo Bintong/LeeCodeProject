@@ -322,13 +322,15 @@ let resNode = list.removeNthFromEnd(listNode1, 2)
  
 
 
+
+
 // list
-let list1Node1 = ListNode(1)
-let list1Node2 = ListNode(2)
-let list1Node3 = ListNode(3)
-let list1Node4 = ListNode(4)
-let list1Node5 = ListNode(5)
-let list1Node6 = ListNode(6)
+let list1Node1 = ListNode(11)
+let list1Node2 = ListNode(23)
+let list1Node3 = ListNode(23)
+let list1Node4 = ListNode(24)
+let list1Node5 = ListNode(53)
+let list1Node6 = ListNode(55)
 
 list1Node1.next = list1Node2
 list1Node2.next = list1Node3
@@ -339,3 +341,14 @@ list1Node5.next = list1Node3
 let deNode = list.detectCycle(list1Node1)
 print(deNode)
 
+let  list123 = list.mergeTwoLists(list1Node1, listNode1)
+print(list123)
+
+
+let heap = Heap()
+let heapTopK = heap.topKFrequent([1,1,1,1,1,1,1,2,2,3], 4)
+print(heapTopK)
+
+let num123 = Number()
+let res123 = num123.threeSum([1,2,3,4,5,6,-1,-2,-4,5,9])
+print(res123)

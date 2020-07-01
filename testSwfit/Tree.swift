@@ -36,7 +36,7 @@ class TreeMethod : NSObject {
         }
         
         var  maxTreeDepth: Int = 0
-        for child in  root!.children {
+        for child in root!.children {
             maxTreeDepth = max(maxTreeDepth,maxDepth(child))
         }
         return maxTreeDepth + 1
@@ -96,4 +96,27 @@ class TreeMethod : NSObject {
         node.right = inOrder(items)
         return node
     }
+    
+//    437. 路径总和 III
+//    func pathSum(_ root: TreeNode?, _ sum: Int) -> Int {
+//        guard root != nil else {
+//            return  0
+//        }
+//        return pathSum(root?.left, sum) + pathSum(root?.right, sum) + find(root, sum)
+//    }
+//
+//    func find(_ root: TreeNode?, _ sum: Int) -> Int{
+//        guard root != nil else {
+//            return  0
+//        }
+//
+//        var count = 0
+//        if root?.val == sum  {
+//            count = count + 1
+//        }
+//
+//        return count + find(root?.left, sum - root.val) + find(root?.right, sum - root?.val)
+//    }
+//
+    
 }

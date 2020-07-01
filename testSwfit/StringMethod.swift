@@ -26,4 +26,18 @@ class StringMethod : NSObject {
             return true
         }
     }
+    
+//   9 回文数   Swift语法简洁的字符串方法
+    func isPalindrome(_ x: Int) -> Bool {
+        guard x >= 0 else {
+            return false
+        }
+        var numberStr = String(x)
+        while numberStr.count > 1 {
+            guard numberStr.removeLast() == numberStr.removeFirst() else {
+                return false
+            }
+        }
+        return true
+    }
 }
