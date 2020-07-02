@@ -352,3 +352,9 @@ print(heapTopK)
 let num123 = Number()
 let res123 = num123.threeSum([1,2,3,4,5,6,-1,-2,-4,5,9])
 print(res123)
+
+
+let res456 = num123.search([4,5,6,7,0,1,2], 3)
+print(res456)
+let res23 = num123.search1([-1,0,3,5,9,12],9)
+print(res23)

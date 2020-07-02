@@ -17,6 +17,7 @@
 		A67E005124A8C67D0033DD5C /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67E005024A8C67D0033DD5C /* List.swift */; };
 		A67E008024AB5D5F0033DD5C /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67E007F24AB5D5F0033DD5C /* Heap.swift */; };
 		A67E008224AC3F9D0033DD5C /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67E008124AC3F9D0033DD5C /* Number.swift */; };
+		A67E008924AD7C1C0033DD5C /* DProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67E008824AD7C1C0033DD5C /* DProgramming.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		A67E005024A8C67D0033DD5C /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		A67E007F24AB5D5F0033DD5C /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		A67E008124AC3F9D0033DD5C /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
+		A67E008824AD7C1C0033DD5C /* DProgramming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DProgramming.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				A67E005024A8C67D0033DD5C /* List.swift */,
 				A67E007F24AB5D5F0033DD5C /* Heap.swift */,
 				A67E008124AC3F9D0033DD5C /* Number.swift */,
+				A67E008824AD7C1C0033DD5C /* DProgramming.swift */,
 			);
 			path = testSwfit;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				A67E001524A5ED780033DD5C /* main.swift in Sources */,
 				A67E005124A8C67D0033DD5C /* List.swift in Sources */,
 				A67E002224A85A0E0033DD5C /* BFS.swift in Sources */,
+				A67E008924AD7C1C0033DD5C /* DProgramming.swift in Sources */,
 				A67E002624A8765D0033DD5C /* Array.swift in Sources */,
 				A67E002024A6F1B00033DD5C /* Tree.swift in Sources */,
 				A67E002424A866E90033DD5C /* DFS.swift in Sources */,

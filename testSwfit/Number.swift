@@ -17,6 +17,64 @@ class Number : NSObject {
     //二分法搜索
     
     
+    func search(_ nums: [Int], _ target: Int) -> Int {
+        guard !nums.isEmpty else {
+            return -1
+        }
+        //队伍的头部 和尾部的指针
+        var left = 0
+        var right = nums.count - 1
+        
+        let f = nums.first!
+        while left <= right {
+            let mid = left + (right - left)/2 // 中间指针
+           
+            let midValue = nums[mid] //中间值
+            if midValue == target {
+                return mid
+            } else if midValue < target { //中间值 小于 目标 右边在
+                if target < f {  // 目标值 小于第一个
+                    left = mid + 1
+                } else { //目标值 大于第一个
+                    if midValue < f {
+                        right = mid - 1
+                    } else {
+                        left  = mid + 1
+                    }
+                }
+            } else {
+                if target < f {
+                    if midValue < f {
+                        right = mid - 1
+                    } else {
+                        left = mid + 1
+                    }
+                } else {
+                    right = mid - 1
+                }
+            }
+        }
+        return -1
+        
+    }
+//    704二分查找
+    func search1(_ nums: [Int], _ target: Int) -> Int {
+        var head = 0
+        var tail = nums.count - 1
+        while head <= tail {
+            let mid = (head + tail)/2
+            if nums[mid] == target {
+                return mid
+            } else if nums[mid] > target {
+                tail = mid - 1
+            } else {
+                head = mid + 1
+            }
+        }
+        return -1
+    }
+    
+    
 //   15. 三数之和
     func threeSum(_ nums: [Int]) -> [[Int]] {
         if nums.count < 2 {
