@@ -30,6 +30,7 @@ class TreeMethod : NSObject {
         print("hello tree")
     }
 //    559
+    
     func maxDepth(_ root: Node?) -> Int {
         guard root != nil else {
             return 0
@@ -40,6 +41,15 @@ class TreeMethod : NSObject {
             maxTreeDepth = max(maxTreeDepth,maxDepth(child))
         }
         return maxTreeDepth + 1
+    }
+    
+    func maxDepth2(_ root: TreeNode?) -> Int {
+        guard root != nil else {
+                  return 0
+              }
+        let  leftDep = maxDepth2(root?.left)
+        let  rightDep = maxDepth2(root?.right)
+        return max(leftDep, rightDep) + 1
     }
     
 //    226  翻转二叉树

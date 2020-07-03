@@ -91,4 +91,19 @@ class List : NSObject {
         
     }
     
+//    24. 两两交换链表中的节点
+    
+    
+    func swapPairs(_ head: ListNode?) -> ListNode? {
+        if head == nil || head?.next == nil {
+            return head
+        }
+        
+        let second = head?.next
+        head?.next = swapPairs(second?.next)
+        second?.next = head
+        return second
+        
+    }
+    
 }

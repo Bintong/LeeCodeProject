@@ -284,14 +284,14 @@ let node_m_5 = Node(7)
 let node_m_6 = Node(2)
 let node_m_8 = Node(12)
 
-
-
+ 
 node_m_1.children = [node_m_2, node_m_3]
 node_m_3.children = [node_m_4, node_m_5]
 node_m_4.children = [node_m_6, node_m_8]
 let deepNum = treeE.maxDepth(node_m_1)
 print(deepNum)
-
+let deepNum1 = treeE.maxDepth2(node1)
+print(deepNum1)
 let inTree = treeE.inverTree(node1)
 print(inTree ?? "")
 let str_tree = "1,2,3,4,5"
@@ -318,6 +318,9 @@ listNode3.next = listNode4
 listNode4.next = listNode5
 listNode5.next = listNode6
 let list = List()
+
+let  list456 = list.swapPairs(listNode1)
+print(list456)
 let resNode = list.removeNthFromEnd(listNode1, 2)
  
 
@@ -345,6 +348,8 @@ let  list123 = list.mergeTwoLists(list1Node1, listNode1)
 print(list123)
 
 
+
+
 let heap = Heap()
 let heapTopK = heap.topKFrequent([1,1,1,1,1,1,1,2,2,3], 4)
 print(heapTopK)
@@ -358,3 +363,10 @@ let res456 = num123.search([4,5,6,7,0,1,2], 3)
 print(res456)
 let res23 = num123.search1([-1,0,3,5,9,12],9)
 print(res23)
+
+
+
+//动态规划
+let dp = DProgramming()
+let subStr =   dp.longestPalindrome("ac")
+print(subStr)
