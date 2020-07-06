@@ -70,4 +70,25 @@ class DProgramming : NSObject {
         let sub2 = s.index(s.startIndex, offsetBy: maxEndIndex)
         return String(s[sub1...sub2])
     }
+    
+    
+    
+    
+    
+//    96. 不同的二叉搜索树
+    
+    func numTrees(_ n: Int) -> Int {
+        if  n <= 1 {
+            return 1
+        }
+        var G = [Int](repeating: 0, count: n + 1)
+        G[0] = 1
+        G[1] = 1
+        for i in 2...n {
+            for j in 1...i {
+                G[i] += G[j - 1] * G[i-j]
+            }
+        }
+        return G[n]
+      }
 }

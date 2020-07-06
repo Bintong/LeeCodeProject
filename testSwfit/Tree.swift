@@ -129,4 +129,33 @@ class TreeMethod : NSObject {
 //    }
 //
     
+//    95. 不同的二叉搜索树 II
+    
+//    func generateTrees(_ n: Int) -> [TreeNode?] {
+//
+//    }
+    
+    
+//    94. 二叉树的中序遍历
+    
+    func inorderTraversal(_ root: TreeNode?) -> [Int] {
+        guard root != nil else {
+            return []
+        }
+        
+        var nodeValueArray = [Int]()
+        var stackNodeArray = [TreeNode]()
+        var currentNode = root
+        while currentNode != nil || !stackNodeArray.isEmpty {
+            while currentNode != nil {
+                stackNodeArray.append(currentNode!)
+                currentNode = currentNode?.left
+            }
+            currentNode = stackNodeArray.popLast()
+            nodeValueArray.append(currentNode!.val)
+            currentNode = currentNode?.right
+        }
+        return nodeValueArray
+    }
+    
 }

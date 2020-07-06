@@ -247,7 +247,6 @@ class Solotion {
         return res
     }
 }
-
 let c = Solotion()
 let node1 = TreeNode(3)
 let node2 = TreeNode(9)
@@ -268,12 +267,16 @@ let arr_tree2 = c.levelOrder1(node1)
 print(arr_tree)
 print(arr_tree2)
 
+
+
+
 let test = Test()
 
 let strM = StringMethod()
 let isE =  strM.checkPermutation("123", "231")
 print(isE)
 
+// tree
 
 let treeE = TreeMethod()
 let node_m_1 = Node(3)
@@ -284,6 +287,8 @@ let node_m_5 = Node(7)
 let node_m_6 = Node(2)
 let node_m_8 = Node(12)
 
+let inorderArray = treeE.inorderTraversal(node1)
+print(inorderArray)
  
 node_m_1.children = [node_m_2, node_m_3]
 node_m_3.children = [node_m_4, node_m_5]
@@ -370,3 +375,6 @@ print(res23)
 let dp = DProgramming()
 let subStr =   dp.longestPalindrome("ac")
 print(subStr)
+
+let subTreeNum = dp.numTrees(3)
+print(subTreeNum)
