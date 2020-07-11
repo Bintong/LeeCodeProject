@@ -323,9 +323,10 @@ listNode3.next = listNode4
 listNode4.next = listNode5
 listNode5.next = listNode6
 let list = List()
-
+let res_lis = list.reverseList2(listNode1)
+print( res_lis)
 let  list456 = list.swapPairs(listNode1)
-print(list456)
+ 
 let resNode = list.removeNthFromEnd(listNode1, 2)
  
 

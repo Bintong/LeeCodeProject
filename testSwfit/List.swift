@@ -105,5 +105,63 @@ class List : NSObject {
         return second
         
     }
+//    206. 反转链表 一、迭代法
+    func reverseList(_ head: ListNode?) -> ListNode? {
+ 
+        var pre:ListNode?
+        var head = head
+        while head != nil {
+            let next = head?.next
+            head?.next = pre
+            pre = head;
+            head = next
+        }
+        return pre
+    }
+    
+    //递归
+    func reverseList2(_ head: ListNode?) -> ListNode? {
+        guard head != nil && head?.next != nil else {
+            return   head
+        }
+        // p一直是最后一个非空节点
+        let p = self.reverseList2(head?.next)
+        head?.next?.next = head
+        head?.next = nil
+        return p
+        
+        
+    }
+ 
+    
+//    92. 反转链表 II
+    
+    func reverseBetween(_ head: ListNode?, _ m: Int, _ n: Int) -> ListNode? {
+        guard head == nil || head?.next == nil else{
+            return head
+        }
+        
+        let res = ListNode(0)
+        res.next = head
+        var node = res
+        for _ in 1..<m {
+            node = node.next!
+        }
+        var nextHead = node.next
+        var next = ListNode(0)
+        let pre = ListNode(0)
+        
+        for _ in m..<n {
+            next = nextHead?.next! as! ListNode
+            nextHead?.next = pre
+            nextHead = next
+            
+            
+        }
+        node.next?.next = next
+        node.next = pre
+        return res.next
+        
+    }
     
 }

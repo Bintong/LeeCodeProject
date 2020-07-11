@@ -158,4 +158,25 @@ class TreeMethod : NSObject {
         return nodeValueArray
     }
     
+//    108. 将有序数组转换为二叉搜索树
+    
+    func sortedArrayToBST(_ nums: [Int]) -> TreeNode? {
+        if nums.count == 0 {
+            return nil
+        }
+        return dfs(nums, 0, nums.count - 1)
+    }
+    
+    func dfs(_ nums: [Int] , _ left: Int, _ right: Int) -> TreeNode? {
+        if left > right {
+            return nil
+        }
+        
+        var mid = (left + right)/2
+        let root = TreeNode.init(nums[mid])
+        root.left = dfs(nums, left, mid - 1)
+        root.right = dfs(nums, mid + 1, right)
+        return root
+    }
+    
 }
